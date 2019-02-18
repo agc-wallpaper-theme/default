@@ -1,0 +1,31 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+@import "components/masonry.css";
+body {
+    @apply bg-white;
+}
+.Cookie--default {
+    @apply bg-grey-darker text-white p-5;
+    & .Cookie__button {
+        @apply bg-teal-dark text-white py-3 px-24;
+        &:hover {
+            @apply bg-teal-darker;
+        }
+    }
+}
+.content {
+    @apply py-4;
+}
+.page-content {
+    @apply mx-auto p-4;
+    & h2 {
+        @apply border-b-4 border-teal-lighter mb-4 pb-2;
+    }
+    & p {
+        @apply leading-normal py-2;
+    }
+    & h4 {
+        @apply mt-4;
+    }
+}
