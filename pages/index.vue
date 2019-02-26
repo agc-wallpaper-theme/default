@@ -42,12 +42,13 @@ export default {
   middleware: 'index',
   head() {
     return {
-      title: 'Wallpaper'
+      title: this.siteTitle
     }
   },
   computed: {
     ...mapState({
       keyword: 'keyword',
+      siteTitle: 'site.title',
       terms: 'terms'
     }),
     images() {
